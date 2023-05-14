@@ -4,16 +4,28 @@
     <meta charset="utf-8"/>
     <title>Simple example - Editor.md examples</title>
     <link rel="stylesheet" href="./lib/css/editormd.css"/>
+    <link rel="stylesheet" href="./css/el-ui.css"/>
     <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
 <div id="layout">
-    <header>
-        <h1>Simple example</h1>
-    </header>
+    <div id="tags">
+        <div>
+            <span class="infront">标题</span>
+            <input id="t1" name="title" type="text" class="el-input__inner"/>
+        </div>
+        <div>
+            <span class="infront">分类</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="python"/><span class="el-checkbox__label">Python</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="C/C++"/><span class="el-checkbox__label">C/C++</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="markdown"/><span class="el-checkbox__label">MarkDown</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="MySQL"/><span class="el-checkbox__label">MySQL</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="java"/><span class="el-checkbox__label">Java</span>
+            <input name="cl" type="checkbox" class="el-checkbox__input" value="哲理"/><span class="el-checkbox__label">哲理</span>
+        </div>
+    </div>
     <div id="test-editormd">
-                <textarea style="display:none;">[TOC]
-
+        <textarea style="display:none;">
 #### Disabled options
 
 - TeX (Based on KaTeX);
@@ -45,13 +57,18 @@
 <!-- 繁體中文 -->
 <script src="../dist/js/languages/zh-tw.js"></script>
 ```
-
 </textarea>
+    </div>
+    <div id="submit">
+        <div>
+            <button onclick="submit()" class="el-button el-button--primary">发布</button>
+        </div>
     </div>
 </div>
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script src="./lib/editormd.min.js"></script>
 <script src="./js/md.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script type="text/javascript">
     var testEditor;
 

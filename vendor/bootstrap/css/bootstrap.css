@@ -548,7 +548,6 @@ pre code {
 .container {
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1308,7 +1307,6 @@ pre code {
     .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
-        max-width: 66.666667%;
     }
 
     .col-lg-9 {
@@ -10835,6 +10833,7 @@ a.text-dark:hover, a.text-dark:focus {
 #blog-div {
     display: inline-block;
     position: relative;
+    width: 700px;
 }
 
 #passage {
@@ -10868,7 +10867,29 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .latest-blogs{
-    display: inline-block;
-    width: 520px;
     margin: 30px 15px;
+}
+
+#right-nav{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: gray;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+#left-passage{
+    display: inline-block;
+    width: 1000px;
+}
+
+#left-passage .container{
+    padding-left: 200px;
+}
+
+.blog-title{
+    max-width: 71.3333333%;
 }
