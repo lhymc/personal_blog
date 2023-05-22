@@ -10893,3 +10893,17 @@ a.text-dark:hover, a.text-dark:focus {
 .blog-title{
     max-width: 71.3333333%;
 }
+
+.blogs-title{
+    color: black;
+}
+
+.blogs-title:hover{
+    color: gray;
+}
+
+#avatar{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
