@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EnglishRemember</title>
+    <link rel="stylesheet" href="css/EnglishRemember.css">
+</head>
+<body>
+
+<div id="app">
+    <div id="beforeStart">
+        <div>
+            <button id="start" type="submit">
+                开始
+            </button>
+        </div>
+    </div>
+    <div id="started" hidden>
+        <div>
+            <span id="verb"></span>
+            <span hidden id="index"></span>
+        </div>
+        <div>
+            <div>
+                <span>
+                过去式：
+            </span>
+                <input id="pastTense" type="text"/>
+            </div>
+            <div>
+                <span>
+                过去分词：
+            </span>
+                <input id="pastParticiple" type="text"/>
+            </div>
+        </div>
+        <div style="height: 100px;">
+            <div>
+                <span id="resultTense"></span>
+            </div>
+            <div>
+                <span id="resultParticiple"></span>
+            </div>
+        </div>
+        <div>
+            <button id="submitAnswer">提交</button>
+            <button hidden id="next">下一题</button>
+            <button hidden id="return">返回</button>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script rel="javascript" src="js/EnglishRemember.js"></script>
+
+
+</body>
+</html>

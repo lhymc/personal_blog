@@ -1,0 +1,13 @@
+body {
+    width: 800px;
+    font-size: 50px;
+}
+
+#number {
+    font-size: 50px;
+}
+
+#app {
+    width: 700px;
+    margin: 0 auto;
+}
