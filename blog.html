@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="./css/el-ui.css"/>
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="lib/css/editormd.css"/>
@@ -60,13 +61,14 @@
             <!-- Navbar Menu -->
             <div id="navbarcollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">主页</a>
+                    <li class="nav-item"><a href="index.html" class="nav-link  ">主页</a>
                     </li>
                     <li class="nav-item"><a href="blog.html" class="nav-link active">博客</a>
                 </ul>
-                <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
-                <!--                <ul class="langs navbar-text"><a href="#" class="active">EN</a><span>           </span><a-->
-                <!--                        href="#">ES</a></ul>-->
+            </div>
+            <div id="search_label">
+                <i class="icon-search-1" id="search_ui"></i>
+                <input style="width: 180px;" type="text" class="el-input__inner" value="未完成"/>
             </div>
         </div>
     </nav>
@@ -165,18 +167,6 @@
             </div>
         </main>
         <aside class="col-lg-4 right-nav">
-            <!-- Widget [Search Bar Widget]-->
-            <div class="widget search">
-                <header>
-                    <h3 class="h6">Search the blog</h3>
-                </header>
-                <form action="#" class="search-form">
-                    <div class="form-group">
-                        <input type="search" placeholder="What are you looking for?">
-                        <button type="submit" class="submit"><i class="icon-search"></i></button>
-                    </div>
-                </form>
-            </div>
             <!-- Widget [Latest Posts Widget]        -->
             <div class="widget latest-posts">
                 <header>
@@ -186,8 +176,8 @@
                     <div class="item d-flex align-items-center">
                         <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
                             <div class="d-flex align-items-center">
-                                <div class="views"><i class="icon-eye"></i> 500</div>
-                                <div class="comments"><i class="icon-comment"></i>12</div>
+                                <div class="views inline"><i class="icon-eye"></i> 500</div>
+                                <div class="comments inline"><i class="icon-comment"></i>12</div>
                             </div>
                         </div>
                     </div>
@@ -195,8 +185,8 @@
                     <div class="item d-flex align-items-center">
                         <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
                             <div class="d-flex align-items-center">
-                                <div class="views"><i class="icon-eye"></i> 500</div>
-                                <div class="comments"><i class="icon-comment"></i>12</div>
+                                <div class="views inline"><i class="icon-eye"></i> 500</div>
+                                <div class="comments inline"><i class="icon-comment"></i>12</div>
                             </div>
                         </div>
                     </div>
@@ -204,23 +194,12 @@
                     <div class="item d-flex align-items-center">
                         <div class="title"><strong>Alberto Savoia Can Teach You About</strong>
                             <div class="d-flex align-items-center">
-                                <div class="views"><i class="icon-eye"></i> 500</div>
-                                <div class="comments"><i class="icon-comment"></i>12</div>
+                                <div class="views inline"><i class="icon-eye"></i> 500</div>
+                                <div class="comments inline"><i class="icon-comment"></i>12</div>
                             </div>
                         </div>
                     </div>
                 </a></div>
-            </div>
-            <!-- Widget [Categories Widget]-->
-            <div class="widget categories">
-                <header>
-                    <h3 class="h6">Categories</h3>
-                </header>
-                <div class="item d-flex justify-content-between"><a href="#">Growth</a><span>12</span></div>
-                <div class="item d-flex justify-content-between"><a href="#">Local</a><span>25</span></div>
-                <div class="item d-flex justify-content-between"><a href="#">Sales</a><span>8</span></div>
-                <div class="item d-flex justify-content-between"><a href="#">Tips</a><span>17</span></div>
-                <div class="item d-flex justify-content-between"><a href="#">Local</a><span>25</span></div>
             </div>
             <!-- Widget [Tags Cloud Widget]-->
             <div class="widget tags">
@@ -257,51 +236,11 @@
                                 </path>
                             </svg></a></li>
                         <li class="list-inline-item"><a href="https://blog.csdn.net/m0_73438591">
-                            <img alt="CSDN首页" src="img/csdn.png">
+                            <img id="csdn" alt="CSDN首页" src="img/csdn.png">
                         </a></li>
-                        <!--                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>-->
-                        <!--                        <li class="list-inline-item"><a href="#"><i class="fa fa-behance"></i></a></li>-->
-                        <!--                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
                     </ul>
                 </div>
             </div>
-            <!--            <div class="col-md-4">-->
-            <!--                <div class="menus d-flex">-->
-            <!--                    <ul class="list-unstyled inline">-->
-            <!--                        <li><a href="#">My Account</a></li>-->
-            <!--                        <li><a href="#">Add Listing</a></li>-->
-            <!--                        <li><a href="#">Pricing</a></li>-->
-            <!--                        <li><a href="#">Privacy &amp; Policy</a></li>-->
-            <!--                    </ul>-->
-            <!--                    <ul class="list-unstyled inline">-->
-            <!--                        <li><a href="#">Our Partners</a></li>-->
-            <!--                        <li><a href="#">FAQ</a></li>-->
-            <!--                        <li><a href="#">How It Works</a></li>-->
-            <!--                        <li><a href="#">Contact</a></li>-->
-            <!--                    </ul>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!--            <div class="col-md-4 right-float">-->
-            <!--                <div class="latest-posts"><a href="#">-->
-            <!--                    <div class="post d-flex align-items-center">-->
-            <!--                        <div class="image inline"><img src="img/small-thumbnail-1.jpg" alt="..." class="img-fluid"></div>-->
-            <!--                        <div class="title inline"><strong>Hotels for all budgets</strong><span class="date last-meta">October 26, 2020</span>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </a><a href="#">-->
-            <!--                    <div class="post d-flex align-items-center">-->
-            <!--                        <div class="image inline"><img src="img/small-thumbnail-2.jpg" alt="..." class="img-fluid"></div>-->
-            <!--                        <div class="title inline"><strong>Great street atrs in London</strong><span class="date last-meta">October 26, 2020</span>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </a><a href="#">-->
-            <!--                    <div class="post d-flex align-items-center">-->
-            <!--                        <div class="image inline"><img src="img/small-thumbnail-3.jpg" alt="..." class="img-fluid"></div>-->
-            <!--                        <div class="title inline"><strong>Best coffee shops in Sydney</strong><span class="date last-meta">October 26, 2020</span>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </a></div>-->
-            <!--            </div>-->
         </div>
     </div>
     <div class="copyrights">

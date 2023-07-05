@@ -23,6 +23,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="lib/css/editormd.css"/>
+    <link rel="stylesheet" href="./css/el-ui.css"/>
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://file.myfontastic.com/N4j4N7oxYtNKkKrJvxc3rZ/icons.css" rel="stylesheet">
@@ -66,9 +67,10 @@
                     </li>
                     <li class="nav-item"><a href="blog.html" class="nav-link ">博客</a>
                 </ul>
-                <div class="navbar-text"><a href="#" class="search-btn"><i class="icon-search-1"></i></a></div>
-<!--                <ul class="langs navbar-text"><a href="#" class="active">EN</a><span>           </span><a-->
-<!--                        href="#">ES</a></ul>-->
+            </div>
+            <div id="search_label">
+                <i class="icon-search-1" id="search_ui"></i>
+                <input style="width: 180px;" type="text" class="el-input__inner" value="未完成"/>
             </div>
         </div>
     </nav>
@@ -85,300 +87,242 @@
         <a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
     </div>
 </section>
-<div id="left-passage">
-    <!-- Intro Section-->
-    <section class="intro">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2 class="h3">个性签名</h2>
-                    <p class="text-big">一个孤独的行者，独自走在自己热爱的道路上。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="featured-posts no-padding-top">
-        <div class="container">
-            <header>
-                <h2>最新</h2>
-            </header>
-            <!-- Post-->
-            <div class="row d-flex align-items-stretch latest-blogs">
-                <div class="text">
-                    <div class="text-inner d-flex align-items-center">
-                        <div class="content">
-                            <header class="post-header">
-                                <div class="category"><a href="#">生活哲学</a></div>
-                                <a href="./blogs/1.html">
-                                    <h2 class="h4">第一性原理</h2></a>
-                            </header>
-                            <footer class="post-footer d-flex align-items-center"><a href="#"
-                                                                                     class="author d-flex align-items-center flex-wrap">
-                                <div class="title inline"><span>Am I a person</span></div>
-                            </a>
-                                <div class="date inline"><i class="icon-clock"></i> 2.5月以前</div>
-                                <div class="comments inline"><i class="icon-comment"></i>114514</div>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Post        -->
-            <div class="row d-flex align-items-stretch latest-blogs">
-                <div class="text">
-                    <div class="text-inner d-flex align-items-center">
-                        <div class="content">
-                            <header class="post-header">
-                                <div class="category"><a href="#">生活哲学</a></div>
-                                <a href="./blogs/2.html">
-                                    <h2 class="h4">How to be successful - 如何成功?</h2></a>
-                            </header>
-                            <footer class="post-footer d-flex align-items-center">
-                                <a href="#" class="author d-flex align-items-center flex-wrap">
+<div class="no-float">
+    <div id="left-passage">
+        <section class="featured-posts no-padding-top">
+            <div class="container">
+                <!-- Post-->
+                <div class="row d-flex align-items-stretch latest-blogs">
+                    <div class="text">
+                        <div class="text-inner d-flex align-items-center">
+                            <div class="content">
+                                <header class="post-header">
+                                    <div class="category"><a href="#">生活哲学</a></div>
+                                    <a href="./blogs/1.html">
+                                        <h2 class="h4">第一性原理</h2></a>
+                                </header>
+                                <footer class="post-footer d-flex align-items-center"><a href="#"
+                                                                                         class="author d-flex align-items-center flex-wrap">
                                     <div class="title inline"><span>Am I a person</span></div>
                                 </a>
-                                <div class="date inline"><i class="icon-clock"></i> 1月以前</div>
-                                <div class="comments inline"><i class="icon-comment"></i>1919810</div>
-                            </footer>
+                                    <div class="date inline"><i class="icon-clock"></i> 2.5月以前</div>
+                                    <div class="comments inline"><i class="icon-comment"></i>114514</div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post        -->
+                <div class="row d-flex align-items-stretch latest-blogs">
+                    <div class="text">
+                        <div class="text-inner d-flex align-items-center">
+                            <div class="content">
+                                <header class="post-header">
+                                    <div class="category"><a href="#">生活哲学</a></div>
+                                    <a href="./blogs/2.html">
+                                        <h2 class="h4">How to be successful - 如何成功?</h2></a>
+                                </header>
+                                <footer class="post-footer d-flex align-items-center">
+                                    <a href="#" class="author d-flex align-items-center flex-wrap">
+                                        <div class="title inline"><span>Am I a person</span></div>
+                                    </a>
+                                    <div class="date inline"><i class="icon-clock"></i> 1月以前</div>
+                                    <div class="comments inline"><i class="icon-comment"></i>1919810</div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post                            -->
+                <div class="row d-flex align-items-stretch latest-blogs">
+                    <div class="text">
+                        <div class="text-inner d-flex align-items-center">
+                            <div class="content">
+                                <header class="post-header">
+                                    <div class="category"><a href="#">Markdown</a></div>
+                                    <a href="./blogs/3.html">
+                                        <h2 class="h4">Markdown 语法</h2></a>
+                                </header>
+                                <footer class="post-footer d-flex align-items-center"><a href="#"
+                                                                                         class="author d-flex align-items-center flex-wrap">
+                                    <div class="title inline"><span>Am I a person</span></div>
+                                </a>
+                                    <div class="date inline"><i class="icon-clock"></i> 2月以前</div>
+                                    <div class="comments inline"><i class="icon-comment"></i>12</div>
+                                </footer>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Post                            -->
-            <div class="row d-flex align-items-stretch latest-blogs">
-                <div class="text">
-                    <div class="text-inner d-flex align-items-center">
-                        <div class="content">
-                            <header class="post-header">
-                                <div class="category"><a href="#">Markdown</a></div>
-                                <a href="./blogs/3.html">
-                                    <h2 class="h4">Markdown 语法</h2></a>
-                            </header>
-                            <footer class="post-footer d-flex align-items-center"><a href="#"
-                                                                                     class="author d-flex align-items-center flex-wrap">
-                                <div class="title inline"><span>Am I a person</span></div>
-                            </a>
-                                <div class="date inline"><i class="icon-clock"></i> 2月以前</div>
-                                <div class="comments inline"><i class="icon-comment"></i>12</div>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
+        </section>
+        <!-- Divider Section-->
+        <!--<section style="background: url(img/divider-bg.jpg); background-size: cover; background-position: center bottom"-->
+        <!--         class="divider">-->
+        <!--    <div class="container">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-md-7">-->
+        <!--                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore-->
+        <!--                    et dolore magna aliqua</h2><a href="#" class="hero-link">View More</a>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+
+        <!--    <section class="featured-posts no-padding-top">-->
+        <!--        <div class="container">-->
+        <!--            &lt;!&ndash; Post&ndash;&gt;-->
+        <!--            <div class="row d-flex align-items-stretch latest-blogs">-->
+        <!--                <div class="text">-->
+        <!--                    <div class="text-inner d-flex align-items-center">-->
+        <!--                        <div class="content">-->
+        <!--                            <header class="post-header">-->
+        <!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+        <!--                                <a href="post.html">-->
+        <!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
+        <!--                            </header>-->
+        <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
+        <!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
+        <!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
+        <!--                            <footer class="post-footer d-flex align-items-center"><a href="#"-->
+        <!--                                                                                     class="author d-flex align-items-center flex-wrap">-->
+        <!--                                <div class="title inline"><span>John Doe</span></div>-->
+        <!--                            </a>-->
+        <!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
+        <!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
+        <!--                            </footer>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; Post        &ndash;&gt;-->
+        <!--            <div class="row d-flex align-items-stretch latest-blogs">-->
+        <!--                <div class="text">-->
+        <!--                    <div class="text-inner d-flex align-items-center">-->
+        <!--                        <div class="content">-->
+        <!--                            <header class="post-header">-->
+        <!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+        <!--                                <a href="post.html">-->
+        <!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
+        <!--                            </header>-->
+        <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
+        <!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
+        <!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
+        <!--                            <footer class="post-footer d-flex align-items-center">-->
+        <!--                                <a href="#" class="author d-flex align-items-center flex-wrap">-->
+        <!--                                    <div class="title inline"><span>John Doe</span></div>-->
+        <!--                                </a>-->
+        <!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
+        <!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
+        <!--                            </footer>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            &lt;!&ndash; Post                            &ndash;&gt;-->
+        <!--            <div class="row d-flex align-items-stretch latest-blogs">-->
+        <!--                <div class="text">-->
+        <!--                    <div class="text-inner d-flex align-items-center">-->
+        <!--                        <div class="content">-->
+        <!--                            <header class="post-header">-->
+        <!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+        <!--                                <a href="post.html">-->
+        <!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
+        <!--                            </header>-->
+        <!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
+        <!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
+        <!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
+        <!--                            <footer class="post-footer d-flex align-items-center"><a href="#"-->
+        <!--                                                                                     class="author d-flex align-items-center flex-wrap">-->
+        <!--                                <div class="title inline"><span>John Doe</span></div>-->
+        <!--                            </a>-->
+        <!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
+        <!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
+        <!--                            </footer>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </section>-->
+
+        <!-- Latest Posts -->
+        <!--    <section class="latest-posts">-->
+        <!--        <div class="container">-->
+        <!--            <header>-->
+        <!--                <h2>Latest from the blog</h2>-->
+        <!--                <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+        <!--            </header>-->
+        <!--            <div class="row">-->
+        <!--                <div class="post col-md-4">-->
+        <!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-1.jpg" alt="..."-->
+        <!--                                                                         class="img-fluid"></a></div>-->
+        <!--                    <div class="post-details">-->
+        <!--                        <div class="post-meta d-flex justify-content-between">-->
+        <!--                            <div class="date">20 May | 2020</div>-->
+        <!--                            <div class="category"><a href="#">Business</a></div>-->
+        <!--                        </div>-->
+        <!--                        <a href="post.html">-->
+        <!--                            <h3 class="h4">Ways to remember your important ideas</h3></a>-->
+        <!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+        <!--                            tempor incididunt ut labore.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="post col-md-4">-->
+        <!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-2.jpg" alt="..."-->
+        <!--                                                                         class="img-fluid"></a></div>-->
+        <!--                    <div class="post-details">-->
+        <!--                        <div class="post-meta d-flex justify-content-between">-->
+        <!--                            <div class="date">20 May | 2020</div>-->
+        <!--                            <div class="category"><a href="#">Technology</a></div>-->
+        <!--                        </div>-->
+        <!--                        <a href="post.html">-->
+        <!--                            <h3 class="h4">Diversity in Engineering: Effect on Questions</h3></a>-->
+        <!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+        <!--                            tempor incididunt ut labore.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="post col-md-4">-->
+        <!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-3.jpg" alt="..."-->
+        <!--                                                                         class="img-fluid"></a></div>-->
+        <!--                    <div class="post-details">-->
+        <!--                        <div class="post-meta d-flex justify-content-between">-->
+        <!--                            <div class="date">20 May | 2020</div>-->
+        <!--                            <div class="category"><a href="#">Financial</a></div>-->
+        <!--                        </div>-->
+        <!--                        <a href="post.html">-->
+        <!--                            <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3></a>-->
+        <!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+        <!--                            tempor incididunt ut labore.</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </section>-->
+
+    </div>
+    <nav id="right-nav">
+        <div id="personal">
+            <span>一个孤独的行者，独自走在自己热爱的道路上。</span>
+        </div>
+        <div class="left-float" id="introduce">
+            <img id="avatar" src="./img/final_avatar.png" alt="头像"/>
+            <span id="name">Am I a Person</span>
+        </div>
+        <div id="information">
+            <div>
+                <span>文章总数:</span>
             </div>
         </div>
-    </section>
-    <!-- Divider Section-->
-    <!--<section style="background: url(img/divider-bg.jpg); background-size: cover; background-position: center bottom"-->
-    <!--         class="divider">-->
-    <!--    <div class="container">-->
-    <!--        <div class="row">-->
-    <!--            <div class="col-md-7">-->
-    <!--                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore-->
-    <!--                    et dolore magna aliqua</h2><a href="#" class="hero-link">View More</a>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-
-<!--    <section class="featured-posts no-padding-top">-->
-<!--        <div class="container">-->
-<!--            &lt;!&ndash; Post&ndash;&gt;-->
-<!--            <div class="row d-flex align-items-stretch latest-blogs">-->
-<!--                <div class="text">-->
-<!--                    <div class="text-inner d-flex align-items-center">-->
-<!--                        <div class="content">-->
-<!--                            <header class="post-header">-->
-<!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
-<!--                                <a href="post.html">-->
-<!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
-<!--                            </header>-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
-<!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
-<!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
-<!--                            <footer class="post-footer d-flex align-items-center"><a href="#"-->
-<!--                                                                                     class="author d-flex align-items-center flex-wrap">-->
-<!--                                <div class="title inline"><span>John Doe</span></div>-->
-<!--                            </a>-->
-<!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
-<!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
-<!--                            </footer>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Post        &ndash;&gt;-->
-<!--            <div class="row d-flex align-items-stretch latest-blogs">-->
-<!--                <div class="text">-->
-<!--                    <div class="text-inner d-flex align-items-center">-->
-<!--                        <div class="content">-->
-<!--                            <header class="post-header">-->
-<!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
-<!--                                <a href="post.html">-->
-<!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
-<!--                            </header>-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
-<!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
-<!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
-<!--                            <footer class="post-footer d-flex align-items-center">-->
-<!--                                <a href="#" class="author d-flex align-items-center flex-wrap">-->
-<!--                                    <div class="title inline"><span>John Doe</span></div>-->
-<!--                                </a>-->
-<!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
-<!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
-<!--                            </footer>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Post                            &ndash;&gt;-->
-<!--            <div class="row d-flex align-items-stretch latest-blogs">-->
-<!--                <div class="text">-->
-<!--                    <div class="text-inner d-flex align-items-center">-->
-<!--                        <div class="content">-->
-<!--                            <header class="post-header">-->
-<!--                                <div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
-<!--                                <a href="post.html">-->
-<!--                                    <h2 class="h4">Alberto Savoia Can Teach You About Interior</h2></a>-->
-<!--                            </header>-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut-->
-<!--                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude consectetur-->
-<!--                                adipisicing elit, sed do eiusmod tempor incididunt.</p>-->
-<!--                            <footer class="post-footer d-flex align-items-center"><a href="#"-->
-<!--                                                                                     class="author d-flex align-items-center flex-wrap">-->
-<!--                                <div class="title inline"><span>John Doe</span></div>-->
-<!--                            </a>-->
-<!--                                <div class="date inline"><i class="icon-clock"></i> 2 months ago</div>-->
-<!--                                <div class="comments inline"><i class="icon-comment"></i>12</div>-->
-<!--                            </footer>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
-    <!-- Latest Posts -->
-<!--    <section class="latest-posts">-->
-<!--        <div class="container">-->
-<!--            <header>-->
-<!--                <h2>Latest from the blog</h2>-->
-<!--                <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-<!--            </header>-->
-<!--            <div class="row">-->
-<!--                <div class="post col-md-4">-->
-<!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-1.jpg" alt="..."-->
-<!--                                                                         class="img-fluid"></a></div>-->
-<!--                    <div class="post-details">-->
-<!--                        <div class="post-meta d-flex justify-content-between">-->
-<!--                            <div class="date">20 May | 2020</div>-->
-<!--                            <div class="category"><a href="#">Business</a></div>-->
-<!--                        </div>-->
-<!--                        <a href="post.html">-->
-<!--                            <h3 class="h4">Ways to remember your important ideas</h3></a>-->
-<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
-<!--                            tempor incididunt ut labore.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="post col-md-4">-->
-<!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-2.jpg" alt="..."-->
-<!--                                                                         class="img-fluid"></a></div>-->
-<!--                    <div class="post-details">-->
-<!--                        <div class="post-meta d-flex justify-content-between">-->
-<!--                            <div class="date">20 May | 2020</div>-->
-<!--                            <div class="category"><a href="#">Technology</a></div>-->
-<!--                        </div>-->
-<!--                        <a href="post.html">-->
-<!--                            <h3 class="h4">Diversity in Engineering: Effect on Questions</h3></a>-->
-<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
-<!--                            tempor incididunt ut labore.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="post col-md-4">-->
-<!--                    <div class="post-thumbnail"><a href="post.html"><img src="img/blog-3.jpg" alt="..."-->
-<!--                                                                         class="img-fluid"></a></div>-->
-<!--                    <div class="post-details">-->
-<!--                        <div class="post-meta d-flex justify-content-between">-->
-<!--                            <div class="date">20 May | 2020</div>-->
-<!--                            <div class="category"><a href="#">Financial</a></div>-->
-<!--                        </div>-->
-<!--                        <a href="post.html">-->
-<!--                            <h3 class="h4">Alberto Savoia Can Teach You About Interior</h3></a>-->
-<!--                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
-<!--                            tempor incididunt ut labore.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-
+    </nav>
 </div>
-<nav id="right-nav">
-    <div>
-        <img id="avatar" src="./img/final_avatar.png" alt="头像"/>
-    </div>
-</nav>
-<!-- Newsletter Section-->
-<!--    <section class="newsletter no-padding-top">    -->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-<!--          <div class="col-md-6">-->
-<!--            <h2>Subscribe to Newsletter</h2>-->
-<!--            <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--          </div>-->
-<!--          <div class="col-md-8">-->
-<!--            <div class="form-holder">-->
-<!--              <form action="#">-->
-<!--                <div class="form-group">-->
-<!--                  <input type="email" name="email" id="email" placeholder="Type your email address">-->
-<!--                  <button type="submit" class="submit">Subscribe</button>-->
-<!--                </div>-->
-<!--              </form>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-<!-- Gallery Section-->
 
-<!--<section class="gallery no-padding">-->
-<!--    <div class="row">-->
-<!--        <div class="mix col-lg-3 col-md-3 col-sm-6 inline">-->
-<!--            <div class="item"><a href="img/gallery-1.jpg" data-fancybox="gallery" class="image"><img-->
-<!--                    src="img/gallery-1.jpg" alt="..." class="img-fluid">-->
-<!--                <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>-->
-<!--            </a></div>-->
-<!--        </div>-->
-<!--        <div class="mix col-lg-3 col-md-3 col-sm-6 inline">-->
-<!--            <div class="item"><a href="img/gallery-2.jpg" data-fancybox="gallery" class="image"><img-->
-<!--                    src="img/gallery-2.jpg" alt="..." class="img-fluid">-->
-<!--                <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>-->
-<!--            </a></div>-->
-<!--        </div>-->
-<!--        <div class="mix col-lg-3 col-md-3 col-sm-6 inline">-->
-<!--            <div class="item"><a href="img/gallery-3.jpg" data-fancybox="gallery" class="image"><img-->
-<!--                    src="img/gallery-3.jpg" alt="..." class="img-fluid">-->
-<!--                <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>-->
-<!--            </a></div>-->
-<!--        </div>-->
-<!--        <div class="mix col-lg-3 col-md-3 col-sm-6 inline">-->
-<!--            <div class="item"><a href="img/gallery-4.jpg" data-fancybox="gallery" class="image"><img-->
-<!--                    src="img/gallery-4.jpg" alt="..." class="img-fluid">-->
-<!--                <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div>-->
-<!--            </a></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!-- Page Footer-->
 <footer class="main-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="contact-details foot-ad">
                     <p>Am_I_a_person</p>
-<!--                    <p>Phone: XXX</p>-->
-<!--                    <p>Email: <a href="mailto:lhy15757107775@163.com">lhy15757107775@163.com</a></p>-->
                     <ul class="social-menu">
                         <li class="list-inline-item"><a target="_blank" href="https://space.bilibili.com/1026569734">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="zhuzhan-icon">
@@ -386,52 +330,13 @@
                                 </path>
                             </svg></a></li>
                         <li class="list-inline-item"><a href="https://blog.csdn.net/m0_73438591">
-                            <img alt="CSDN首页" src="img/csdn.png">
+                            <img  id="csdn" alt="CSDN首页" src="img/csdn.png">
                         </a></li>
                         <li class="list-inline-item"><a href="EnglishRemember.html">
                             <span>英语过去分词和过去式背诵</span></a></li>
-<!--                        <li class="list-inline-item"><a href="#"><i class="fa fa-behance"></i></a></li>-->
-<!--                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
                     </ul>
                 </div>
             </div>
-<!--            <div class="col-md-4">-->
-<!--                <div class="menus d-flex">-->
-<!--                    <ul class="list-unstyled inline">-->
-<!--                        <li><a href="#">My Account</a></li>-->
-<!--                        <li><a href="#">Add Listing</a></li>-->
-<!--                        <li><a href="#">Pricing</a></li>-->
-<!--                        <li><a href="#">Privacy &amp; Policy</a></li>-->
-<!--                    </ul>-->
-<!--                    <ul class="list-unstyled inline">-->
-<!--                        <li><a href="#">Our Partners</a></li>-->
-<!--                        <li><a href="#">FAQ</a></li>-->
-<!--                        <li><a href="#">How It Works</a></li>-->
-<!--                        <li><a href="#">Contact</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-4 right-float">-->
-<!--                <div class="latest-posts"><a href="#">-->
-<!--                    <div class="post d-flex align-items-center">-->
-<!--                        <div class="image inline"><img src="img/small-thumbnail-1.jpg" alt="..." class="img-fluid"></div>-->
-<!--                        <div class="title inline"><strong>Hotels for all budgets</strong><span class="date last-meta">October 26, 2020</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a><a href="#">-->
-<!--                    <div class="post d-flex align-items-center">-->
-<!--                        <div class="image inline"><img src="img/small-thumbnail-2.jpg" alt="..." class="img-fluid"></div>-->
-<!--                        <div class="title inline"><strong>Great street atrs in London</strong><span class="date last-meta">October 26, 2020</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a><a href="#">-->
-<!--                    <div class="post d-flex align-items-center">-->
-<!--                        <div class="image inline"><img src="img/small-thumbnail-3.jpg" alt="..." class="img-fluid"></div>-->
-<!--                        <div class="title inline"><strong>Best coffee shops in Sydney</strong><span class="date last-meta">October 26, 2020</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a></div>-->
-<!--            </div>-->
         </div>
     </div>
     <div class="copyrights">
@@ -451,5 +356,6 @@
 <script src="./vendor/jquery.cookie/jquery.cookie.js"></script>
 <script src="./vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
 <script src="js/front.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
